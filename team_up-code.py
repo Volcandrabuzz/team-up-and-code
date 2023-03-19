@@ -1,0 +1,31 @@
+import pygame
+pygame.init()
+Background = pygame.display.set_mode((600 ,600))
+pygame.draw.rect(Background ,(255,255,255,),(0,0,600,600))
+for i in range(0, 600, 15):
+    pygame.draw.line(Background, (0,0,0), (0, i), (600, i))
+    pygame.draw.line(Background, (0,0,0), (i, 0), (i, 600))
+pygame.display.update()
+while pygame.event.wait().type != pygame.QUIT: 
+       pygame.draw.rect(Background,(0,0,0), (120,90,15,120))
+       pygame.draw.rect(Background,(0,0,0), (135,75,15,15))
+       pygame.draw.rect(Background,(0,0,0), (150,60,15,15))
+       pygame.draw.rect(Background,(0,0,0), (165,45,120,15))  
+       pygame.draw.rect(Background,(0,0,0), (285,60,15,15))  
+       pygame.draw.rect(Background,(0,0,0), (300,75,15,15))  
+       pygame.draw.rect(Background,(0,0,0), (315,90,15,30))  
+       pygame.draw.rect(Background,(0,0,0), (135,195,45,15))  
+       pygame.draw.rect(Background,(0,0,0), (165,165,15,45))  
+       pygame.draw.rect(Background,(0,0,0), (330,120,15,225))  
+       pygame.draw.rect(Background,(0,0,0), (105,210,15,30))
+       pygame.draw.rect(Background,(0,0,0), (120,225,15,30))
+       pygame.draw.rect(Background,(0,0,0), (105,255,15,15))
+       pygame.draw.rect(Background,(0,0,0), (90,270,15,45))
+       pygame.draw.rect(Background,(0,0,0), (105,300,30,15))
+       pygame.draw.rect(Background,(0,0,0), (120,315,15,30))
+       pygame.draw.rect(Background,(0,0,0), (135,345,15,15))
+       pygame.draw.rect(Background,(0,0,0), (120,225,15,30))
+       pygame.draw.rect(Background,(0,0,0), (105,210,15,30))
+       pygame.display.flip()
+    
+
